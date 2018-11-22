@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/first"
+            android:id="@+id/txt_first"
+            android:text="首页"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:src="@drawable/sort"
+            android:id="@+id/txt_scot"
+            android:text="分类"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+        <ImageView
+            android:src="@drawable/find"
+            android:id="@+id/txt_find"
+            android:text="发现"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+        <ImageView
+            android:src="@drawable/cart"
+            android:id="@+id/txt_cart"
+            android:text="购物车"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+        <ImageView
+            android:src="@drawable/mine"
+            android:id="@+id/txt_my"
+            android:text="我的"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_above="@id/ll_bottom"
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+</RelativeLayout>
